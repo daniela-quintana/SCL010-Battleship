@@ -4,159 +4,180 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
+* [3. Objetivos del proyecto](#3-objetivos-de-aprendizaje)
 * [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Pistas, tips y lecturas complementarias](#5-pistas-tips-y-lecturas-complementarias)
-* [6. Hacker edition](#6-hacker-edition)
+* [5. Usuario](#5-usuario)
+* [6. Benchmark](#6-benchmark)
+* [7. Historias de Usuario](#7-historias-de-usuario)
+* [8. Diagrama de Flujo](#8-diagrama-de-flujo)
+* [9. Prototipado](#9-prototipado)
+* [10. Look & Feel](#10-look-&-feel)
 
 ## 1. Preámbulo
 
-<img
-src="https://user-images.githubusercontent.com/7809496/66518543-dc75c380-eabb-11e9-8fb9-1d96d97a6a8c.png"
-width="100%"/>
+<img src=" " width="100%"/>
 
-Los videojuegos son una verdadera prueba cuando se trata de tecnología. Uno de
-los factores de éxito para el equipo de android, por ejemplo, fue que pudiesen
-tener un juego corriendo en los primeros teléfonos. La idea era que si un juego
-podía ejecutarse en la plataforma, un programa más simple con pantallas mucho
-más fáciles de trabajar que solo tuviese botones y texto debería funcionar aun
-mejor.
+Los videojuegos son una verdadera prueba cuando se trata de tecnología. Uno de los factores de éxito para el equipo de android, por ejemplo, fue que pudiesen tener un juego corriendo en los primeros teléfonos. La idea era que si un juego podía ejecutarse en la plataforma, un programa más simple con pantallas mucho más fáciles de trabajar que solo tuviese botones y texto debería funcionar aun mejor.
 
-Entonces la idea de este proyecto es llevar los frameworks de aplicaciones web
-al límite de lo que pueden ofrecer, tratar de explorar sus funcionalidades más
-avanzadas y lograr un producto que se luzca con tu talento y creatividad
-dominando el framework que elijas.
+Entonces la idea de este proyecto es llevar los frameworks de aplicaciones web al límite de lo que pueden ofrecer, tratar de explorar sus funcionalidades más avanzadas y lograr un producto que destaque en sí por sus funcionalidades y estética.
+
+[Concrete Latinoamérica](https://www.accenture.com/cl-es/concrete-disrupcion-digital) (parte de Accenture), nos plantea este desafío como oportunidad de desarrollo técnica y profesional, adquiriendo nuevas prácticas de metodologías ágiles y conocimiento extendido en React JS.
+
+<br>
 
 ## 2. Resumen del proyecto
 
-<img
-src="https://user-images.githubusercontent.com/7809496/66517403-78ea9680-eab9-11e9-8ab4-8d3c2cc21646.png"
-width="100%"/>
 
-Battleship es un juego clásico, con múltiples versiones en juegos de mesa y en
-linea (si no lo conoces, puedes verlo en este link :
+Battleship es un juego clásico, con múltiples versiones en juegos de mesa y en linea (si no lo conoces, puedes verlo en este link:
 [battle-ship](https://es.wikipedia.org/wiki/Batalla_naval_(juego))).
 
-El juego es para dos personas. Consiste en que en un tablero cada jugador coloca
-un conjunto de barcos, ocultando su posición del contrincante. Luego, por
-turnos, van anunciando una posición del tablero y el enemigo informa si le han
-dado a uno de sus barcos o no. El juego termina cuando un jugador ha conseguido
-hundir todos los barcos del otro.
+El juego es para dos personas. Consiste en que en un tablero cada jugador coloca un conjunto de barcos, ocultando su posición del contrincante. Luego, por turnos, van anunciando una posición del tablero y el enemigo informa si le han
+dado a uno de sus barcos o no. El juego termina cuando un jugador ha conseguido hundir todos los barcos del otro.
 
-En este proyecto deberás crear una nueva versión, agregándole algún giro para
-actualizarlo y hacerlo más atractivo para las nuevas generaciones. También, no
-estás atada a hacer este juego sobre barcos, puedes hacerlo con el tema que más
-te guste, siempre y cuando el modo de juego sea parecido.
+Este proyecto mantiene la misma estructura de juego pero con una temática diferente, con el fin de actualizarlo y hacerlo más atractivo para las nuevas generaciones.
 
-También el juego debe ser para dos jugadores, para lograrlo debes pensar en cómo
-puedes estructurar la información, estado de la aplicación y cómo guardarlos en
-alguna base de datos como __Firebase__ o __MongoDB Stitch__.
+Continúa siendo un juego para dos jugadores que se enfrentan entre sí para detectar los elementos (barcos originalmente) de su oponente, mediante sistema de turnos hasta completar el objetivo de lograr derribar todos los elementos del jugador oponente, desarrollado para plataformas móviles tales como teléfonos celulares y/o tablets.
 
-## 3. Objetivos de aprendizaje
+<br>
 
-1. El objetivo principal de hacer este juego es que puedas diseñar un esquema de
-datos y lo apliques a una base de datos conocida, como _firebase_ o _mongodb_.
-Muchas veces el como modeles la información es más importante a como estructures
-tu código, ya que los problemas que puedan aparecer en el futuro tendrán su
-origen acá.
+## 3. Objetivos del proyecto
 
-2. No menos importante, tendrás que diseñar y mantener el estado dentro de la
-aplicación, esto es la información que usas y guardas temporalmente por cada
-ejecución. Para esto unas herramientas para _react_ que te pueden servir son
-__Redux__ o también __Context API__ así como también los estados internos de
-cada componente. Por el lado de _angular_ tendrás a los __observables__
-y su uso conjunto con los __servicios__ y por supuesto las propiedades que uses
-en cada componente.
+1. El objetivo principal es lograr generar un nuevo juego basándose en la mecánica y estructura de juego original de battleship para captar un nuevo público objetivo.
+Determinar el público objetivo, crear el perfil de usuario que jugará esta nueva versión de Battleship.
 
-3. Y finalmente tendrás que diseñar una interfaz llamativa, usando y abusando de
-todo lo que sabes de CSS y animaciones para que tengas un juego vistoso y que
-guste a la gente. Tienes que invitar a jugar tu juego.
+2. Definir la nueva temática de juego, la cual dará guía a los elementos gráficos, interacciones, animaciones y estilo de los elementos dentro del juego.
 
-Tópicos: _react_, _angular_, _redux_, _firebase_, _mongodb stitch_.
+3. Diseñar una interfaz llamativa utilizando tecnologías de CSS y animaciones para lograr el desarrollo de un juego llamativo, interactivo, que capte la atención de las personas.
+
+4. Integrar tecnologías de _React JS_, _React Native_ y _Redux_ para el desarrollo del juego, a modo que sea diseñado para plataformas móviles (teléfonos celulares y tablets).
+
+5. Implementar Firebase como sistema de base de datos (backend), para modalidad de juego online y enviar invitaciones a amigos.
+
+6. Realizar testing de componentes de desarrollo a través de _Jest_.
+
+<br>
 
 ## 4. Consideraciones generales
 
-Este proyecto se debe resolver en equipos de 3 personas.
+Este proyecto se ha desarrollado por:
+[Daniela Quintana Martinez ](https://github.com/daniela-quintana/) y [Fernanda Vega Leiva](https://github.com/fernandabelenVL), ambas estudiantes de [Laboratoria Chile](https://www.laboratoria.la/) (mención Front-End), junto con el apoyo y mentoría de [Maurício Martinez Marques](https://www.linkedin.com/in/maur%C3%ADcio-martinez-marques/), iOS Tech Lead de Concrete Latinoamérica.
 
-La planificación es clave, por lo que debes coordinarte con tu equipo e
-identificar las historias de usuario, priorizarlas y trabajarlas sprint a sprint
-cuidando de que hayan test para el código, se haya hecho test con usuarios sobre
-la usabilidad y cumpliendo con las ceremonias de SCRUM que has aprendido a lo
-largo del bootcamp.
+Para el proceso de planificación se han utilizado herramientas tales como Trello y Github Projects, a través de metodologías ágiles tales como SCRUM, manteniendo siembre la comunicación activa dentro del equipo de trabajo durante todo el proceso de planteamiento, desarrollo y ejecución del proyecto por medio de sprints semanales y daily.
 
-También para este proyecto, usa cualquier framework (_react_, _angular_, etc...)
-cuidando de que se vea bien en las pantallas de celular o computador, que los
-jugadores puedan elegir la plataforma libremente sin prejuicio de la
-jugabilidad. Para esto considera un tamaño variable de pantalla y que los
-elementos del juego se redimensionen dependiendo de ella.
+El desarrollo se realiza a través de React JS, enfocado a dispositivos móviles y tablets utilizando React Native.
 
-Para la base de datos, trata de modelar bien cómo guardarás los datos y piensa
-bien el cómo soportar varios usuarios a la vez en diferentes salas de juego.
-Recuerda que "battleship" se juega de a dos. Usa tu creatividad para asignar
-contrincantes a cada jugador.
+## 5. Definición de Usuario
 
-### Definición de terminado para cada historia de usuario
+<br>
 
-* Debes haber recibido _code review_ de al menos una compañera.
-* Haces _test_ unitarios y, además, has testeado tu producto manualmente.
-* Hiciste _tests_ de usabilidad e incorporaste el _feedback_ del usuario.
-* Desplegaste tu aplicación y has etiquetado tu versión (git tag).
+## 6. Benchmark
 
-## 5. Pistas, tips y lecturas complementarias
+<img 
+src="https://firebasestorage.googleapis.com/v0/b/scl010-battleship-f2180.appspot.com/o/Images%2F01-minijuegos.png?alt=media&token=42098470-03cb-4f74-9f9f-e6337edb55ce" 
+width="100%"/>
 
-1. Modelar los datos, es un paso muy importante, considera que el juego es de
-dos personas, pero más de una pareja puede estar jugando a la vez (modelo de
-salón de juego).
+Ver Juego: [Battleship - minijuegos.com](https://www.minijuegos.com/juego/mp-battleship)
 
-2. Haz un _fork_ de este repositorio (en GitHub). Luego que tus compañeras de
-proyecto hagan a su vez _fork_ de __tu__ repositorio. Recuerda, como en
-proyectos anteriores, que una de ustedes debe ser la integradora o _maestra_ del
-repositorio principal.
+Ver Juego: [Battleships Armada - .paisdelosjuegos.es](https://www.paisdelosjuegos.es/juego/battleships-armada.html)
 
-3. Para facilidad piensa en una cuadrícula y que cada _barco_ solo ocupa una de
-ellas. Si quieres escalar en dificultad para este proyecto, puedes intentar con
-barcos de formas y tamaños diferentes.
+Ver Juego: [Batalla naval - battleship-game.org](https://battleship-game.org/es/)
 
-4. Ten el concepto de turno y guarda de quién es el turno cada vez en la base de
-datos. También define la condición de término en una forma que tu código lo
-pueda detectar, como por ejemplo : todos los barcos se han hundido.
+Ver Juego: Battle Fleet [iOs](https://apps.apple.com/us/app/fleet-battle-sea-battle-game/id904275738) - [Android](https://play.google.com/store/apps/details?id=de.smuttlewerk.fleetbattle&hl=es)
 
-5. Llevar el estado del juego es primordial, define bien las acciones,
-reducidores y datos que estarán en cada juego, turno y movida de los jugadores.
-Puedes hacer un diagrama de estados para esto :
-[diagrama-estados](https://www.lucidchart.com/pages/es/diagrama-de-maquina-de-estados)
+Ver Juego: Conceptis Seabattle [iOs](https://apps.apple.com/us/app/conceptis-seabattle/id1226168254) - [Android](https://play.google.com/store/apps/details?id=com.conceptispuzzles.battleships&hl=es_CL)
 
-### Otros recursos
 
-#### Bibliotecas y componentes
+### Conclusiones:
 
-* [redux](https://es.redux.js.org/)
-* [animaciones-react](https://medium.com/@dmitrynozhenko/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf)
-* [animaciones-angular](https://blog.angularindepth.com/total-guide-to-dynamic-angular-animations-that-can-be-toggled-at-runtime-be5bb6778a0a)
-* [servicios-angular](https://angular.io/tutorial/toh-pt4)
-* [contexto-react](https://es.reactjs.org/docs/context.html)
-* [hooks-react](https://es.reactjs.org/docs/hooks-intro.html)
-* [Más animaciones para frameworks](https://popmotion.io/pose/)
+A partir de las observaciones extraídas del análisis de diferentes plataformas de juego Battleship, tanto en versiones de computador como mobile, podemos extraer las siguientes conclusiones:
+* Conclusión 1
+* Conclusión 2
+* Conclusión 3
 
-#### Conceptos
+<br>
 
-* [observables](https://angular.io/guide/observables)
-* [visualizador-observables](https://rxviz.com/)
-* [visualizador-observables-2](https://rxmarbles.com/)
+## 7. Historias de Usuario
 
-## 6. Hacker edition
+1. Como usuario jugador de battleship me gusta poder ingresar mi nombre.
 
-Hasta el momento has usado javascript, html, css, react, angular, y otras
-herramientas para hacer tus aplicaciones, pero ¿qué tal si te aventuras con tu
-grupo a hacer este proyecto usando algún framework orientado a videojuegos?. Te
-invitamos a aceptar el desafío e intentar hacer el juego usando algún
-__game engine__ como los que están a continuación o el que tu encuentres en la
-internet:
+_Criterios de consideración:_
 
-* [GDevelop](https://gdevelop-app.com/)
-* [Moddio](https://www.modd.io/)
-* [Construct](https://www.scirra.com)
-* [Babylon](https://www.babylonjs.com/)
-* [Impact](https://github.com/phoboslab/impact)
-* [Phaser](https://phaser.io)
+2. Como usuario jugador de battleship me gustaría elegir un identificador (color, avatar, etc.)
+
+_Criterios de consideración:_
+
+3. Como usuario jugador de battleship me gustaría poder invitar a un amigo a jugar conmigo.
+
+_Criterios de consideración:_
+
+4. Como usuario jugador de battleship me gustaría poder tener la opción de  invitar a un amigo o jugar contra la computadora.
+
+_Criterios de consideración:_
+
+5. Como usuario jugador de battleship me gustaría poder elegir las casillas donde que quiero que vayan mis “barcos”.
+
+_Criterios de consideración:_
+
+6. Como usuario jugador de battleship me gustaría poder clickear las cuadrados del tablero para jugar.
+
+_Criterios de consideración:_
+
+7. Como usuario jugador de battleship me gustaría poder visualizar los "barcos" que me quedan por derribar de mi oponente.
+
+_Criterios de consideración:_
+
+8. Como usuario jugador de battleship me gustaría poder ver en tiempo real si la casilla seleccionada derribó o no el "barco" de mi oponente.
+
+_Criterios de consideración:_
+
+9. Como usuario jugador de battleship me gustaría poder elegir el nivel dificultad de juego que quiero (número de casillas 5x5, 8x8, 10x10, 12x12).
+
+_Criterios de consideración:_
+
+10. Como usuario jugador de battleship me gustaría poder tener una pantalla de resultados al terminar el juego (ganador-perdedor).
+
+_Criterios de consideración:_
+
+11. Como usuario jugador de battleship me gustaría poder volver al inicio para comenzar un nuevo juego.
+
+_Criterios de consideración:_
+
+12. Como usuario jugador de battleship me gustaría poder abandonar el juego en caso de que lo necesite.
+
+_Criterios de consideración:_
+
+<br>
+
+## 8. Diagrama de Flujo
+
+<img src="https://firebasestorage.googleapis.com/v0/b/scl010-battleship-f2180.appspot.com/o/Images%2Fdiagrama-de-flujo.png?alt=media&token=fe3a3893-ef36-404c-9d0e-bc5fdf99a8a4" width="100%">
+
+<br/>
+<br/>
+
+## 9. Prototipado
+
+* Sketch
+* Wireframe
+
+<br>
+
+## 10. Look & Feel
+
+<br>
+
+## Links de Interés
+
+* [Tablero Trello](https://trello.com/b/myWBjzhV/battleship)
+* [Concrete Latinoamérica junto a Laboratoria](https://medium.com/concretelatinoam%C3%A9rica/desaf%C3%ADo-concrete-laboratoria-19e0b1b66b45)
+
+## Desarrollado por:
+* Daniela Quintana Martinez: [Github](https://github.com/daniela-quintana) - [LinkedIn](https://www.linkedin.com/in/daniela-quintana/)
+* Fernanda Vega Leiva: [Github](https://github.com/fernandabelenVL) - [LinkedIn](https://www.linkedin.com/in/fernanda-vega/)
+
+Junto con el apoyo y mentoría de:
+* Maurício Martinez Marques - [iOS Tech Lead en Concrete Latinoamerica](https://www.linkedin.com/in/maur%C3%ADcio-martinez-marques/)
+* Concrete Latinoamérica - [Visitar sitio web](https://www.accenture.com/cl-es/concrete-disrupcion-digital)
+* Laboratoria Chile - [Visitar sitio web](https://www.laboratoria.la/)
+
 
