@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 9131,
-  "expoServerNgrokUrl": "https://cs-2ud.anonymous.scl010-battleship.exp.direct",
-  "packagerNgrokUrl": "https://packager.cs-2ud.anonymous.scl010-battleship.exp.direct",
-  "ngrokPid": 9156
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": "https://2m-a6z.anonymous.scl010-battleship.exp.direct",
+  "packagerNgrokUrl": "https://packager.2m-a6z.anonymous.scl010-battleship.exp.direct",
+  "ngrokPid": 13112
 }

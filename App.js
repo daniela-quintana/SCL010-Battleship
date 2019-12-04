@@ -1,40 +1,65 @@
-import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
+import React from 'react';
+import { Button, View, Text, TextInput, StyleSheet } from 'react-native';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-export default function App() {
-  const [enteredName, setEnteredName] = useState('');
+//components
+import LoginScreen from './components/LoginScreen'
+
+class HomeScreen extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      userName: '',
+    }
+  }
+
+  render() {
   
-  //guardar nombre de input con cada "click"
-  const nameInputHandler = (enteredName) => {
-    setEnteredName(enteredName);
-  };
-  
-  //usar el nombre ingresado con el boton de "comenzar a jugar"
-  const loginGameHandler = () => {
-    console.log(enteredName);
-  };
-  
-  return (
-    <View style={styles.screen}>
-      <Text style={{fontSize:20, textAlign: 'center'}}>¡Bienvenido a Battleship! </Text>
-      <Text style={{marginBottom:20, textAlign: 'center'}}>Antes de empezar ingresa tu nombre</Text>
-      <View>
-        <TextInput 
-          placeholder="Ingresa tu nombre"
-          style={styles.input}
-          onChangeText={nameInputHandler}
-          value={enteredName}
-        />
-        <Button
-          title="Comenzar a jugar"
-          style={{color: 'black'}}
-          onPress={loginGameHandler}
-      />
+  const usernameHandler = () => {
+      console.log(this.state.userName)
+   }
+   
+    return (
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+         <Text style={{fontSize:20, textAlign: 'center'}}>¡Bienvenido a Battleship! </Text>
+         <Text style={{marginBottom:20, textAlign: 'center'}}>Antes de empezar ingresa tu nombre</Text> 
+        
+         <View>
+	        <TextInput 
+	          placeholder="Ingresa tu nombre"
+	          style={styles.input}
+	          onChangeText={(userName) => this.setState({userName})}
+	          value={this.state.text}
+	        />
+	        <Button
+	          title="Comenzar a jugar"
+	          style={{color: 'black'}}
+	          onPress={() => { this.props.navigation.navigate('Login'); {usernameHandler()} }}
+	         />
+         </View>
       </View>
-      <View>
-      </View>
-    </View>
-  );
+    );
+  }
+}
+
+const RootStack = createStackNavigator(
+  {
+    Home: HomeScreen,
+    Login: LoginScreen,
+  },
+  {
+    initialRouteName: 'Home',
+  }
+);
+
+const AppContainer = createAppContainer(RootStack);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
 }
 
 const styles = StyleSheet.create({
